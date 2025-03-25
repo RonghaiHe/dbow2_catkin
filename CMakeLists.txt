@@ -9,7 +9,7 @@ include(ExternalProject)
 file(MAKE_DIRECTORY ${CATKIN_DEVEL_PREFIX}/include)
 
 ExternalProject_Add(dbow2_src
-  GIT_REPOSITORY https://github.com/dorian3d/DBoW2.git
+  GIT_REPOSITORY git@github.com:dorian3d/DBoW2.git
   GIT_TAG master
   UPDATE_COMMAND ""
   PATCH_COMMAND patch -p1 < ${CMAKE_CURRENT_LIST_DIR}/fix_fs_iter.patch
